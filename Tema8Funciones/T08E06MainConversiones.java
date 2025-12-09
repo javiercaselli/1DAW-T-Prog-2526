@@ -1,7 +1,6 @@
 package Tema8Funciones;
 
 import java.util.Scanner;
-import Tema8Funciones.T08E06Conversiones.*;
 
 public interface T08E06MainConversiones {
 
