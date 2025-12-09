@@ -98,11 +98,18 @@ public class T07E29BuscaTesoro {
         pintarTablero(tablero, false);
 
         // Solicita coordenadas de la jugada
-        System.out.println();
-        System.out.print("Coordenada x: ");
-        int coordX = sc.nextInt();
-        System.out.print("Coordenada y: ");
-        int coordY = sc.nextInt();
+        int coordX = -1;
+        int coordY = -1;
+        do {
+            System.out.println();
+            System.out.print("Coordenada x: ");
+            coordX = sc.nextInt();
+            System.out.print("Coordenada y: ");
+            coordY = sc.nextInt();
+            if ("X".equals(tablero[coordY][coordX])) {
+                System.out.println("Esta casilla ya está marcada, por favor introduzca otras coordenandas...");
+            }
+        } while ("X".equals(tablero[coordY][coordX]));
 
         // Comprobar jugada
         if (MINA.equals(tablero[coordY][coordX])) {
