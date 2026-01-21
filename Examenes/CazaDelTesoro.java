@@ -33,11 +33,11 @@ public class CazaDelTesoro {
         int puntosOrdenador = 0;
         int tesorosEncontrados = 0;
 
-        int turno = 0; // 0 humano, 1 ordenador
+        int turno = 1; // 0 humano, 1 ordenador
 
         pintarTablero(visible);
 
-        while (tesorosEncontrados < NUM_TESOROS) {
+        while (tesorosEncontrados < NUM_TESOROS && (puntosHumano < NUM_TESOROS-1 && puntosOrdenador < NUM_TESOROS-1)) {
             if (turno == 0) {
                 System.out.println("\nTurno del HUMANO");
                 boolean acierto = turnoHumano(oculto, visible);
