@@ -1,2 +1,49 @@
-# Ignore compiled Java class files
+# === IntelliJ IDEA ===
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# === Compilación / build ===
+/out/
+/build/
+/target/
+
+# === Logs ===
+*.log
+
+# === Archivos del sistema ===
+.DS_Store
+Thumbs.db
+
+# === Variables de entorno ===
+.env
+.env.local
+.env.*.local
+
+# === Dependiendo del lenguaje (opcional) ===
+
+# Java
 *.class
+
+# Kotlin
+*.kotlin_module
+
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# === IntelliJ caches (extra seguridad) ===
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries/
+.idea/shelf/
